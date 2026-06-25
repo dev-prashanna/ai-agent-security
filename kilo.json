@@ -1,0 +1,54 @@
+{
+  "$schema": "https://app.kilo.ai/config.json",
+  "permission": {
+    "semantic_search": "allow"
+  },
+  "provider": {
+    "google": {
+      "options": {
+        "apiKey": "${GOOGLE_API_KEY}"
+      }
+    }
+  },
+  "mcp": {
+    "filesystem": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-filesystem", "/home/prashanna/Documents/ai-agent-security"],
+      "enabled": true,
+      "timeout": 10000
+    },
+    "memory": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-memory"],
+      "enabled": true,
+      "timeout": 10000
+    },
+    "sequential-thinking": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "enabled": true,
+      "timeout": 10000
+    },
+    "fetch": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-fetch"],
+      "enabled": true,
+      "timeout": 15000
+    },
+    "sqlite": {
+      "type": "local",
+      "command": ["npx", "-y", "mcp-server-sqlite-npx", "--db-path", "/home/prashanna/Documents/ai-agent-security/data/experiments.db"],
+      "enabled": true,
+      "timeout": 10000
+    },
+    "github": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-github"],
+      "environment": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_TOKEN}"
+      },
+      "enabled": true,
+      "timeout": 15000
+    }
+  }
+}

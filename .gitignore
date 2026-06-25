@@ -23,6 +23,9 @@ kaggle.json
 data/ai-agent-security-multi-step-tool-attacks/
 data/*.zip
 
+# SDK fixtures (may contain test secrets)
+data/raw/aicomp_sdk/fixtures/
+
 # Logs
 logs/
 *.log
