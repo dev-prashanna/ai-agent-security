@@ -1,0 +1,17 @@
+# Core dependencies
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Kaggle CLI
+kaggle>=2.0.0
+
+# Jupyter
+jupyter>=1.0.0
+notebook>=7.0.0
+ipykernel>=6.0.0
+
+# Development
+tqdm>=4.65.0
+
+# Note: aicomp_sdk will be installed separately from competition data
+# It's not available on PyPI - you get it from the competition download

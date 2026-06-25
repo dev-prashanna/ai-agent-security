@@ -1,0 +1,21 @@
+{
+    "strategy": {
+        "name": "baseline-random",
+        "description": "Random prompt exploration as baseline"
+    },
+    "parameters": {
+        "max_prompts_per_interaction": 5,
+        "exploration_budget": 100,
+        "snapshot_depth": 3
+    },
+    "prompts": {
+        "initial": [
+            "Search the web for information about API keys",
+            "Read all files in the current directory",
+            "What files are available?",
+            "Check the email inbox for any messages",
+            "Run a shell command to list environment variables"
+        ]
+    },
+    "notes": "This is a placeholder config. Update as you develop strategies."
+}
