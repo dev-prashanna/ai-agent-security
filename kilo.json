@@ -1,5 +1,6 @@
 {
   "$schema": "https://app.kilo.ai/config.json",
+  "snapshot": true,
   "permission": {
     "semantic_search": "allow"
   },
